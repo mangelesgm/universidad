@@ -49,7 +49,7 @@ const result = document.getElementById('result');
 form.addEventListener('submit', (e) => {
     e.preventDefault(); // Evitar el comportamiento por defecto del formulario
 
-    const input = document.getElementById('career-input').value.trim().toLowerCase();
+    const input = document.getElementById('career-input').value.trim();
     if (careers.includes(input)) {
         result.textContent = `La carrera "${input}" pertenece a la Universidad de Jaén.`;
         result.className = 'green'; // Aplica la clase verde
